@@ -2,7 +2,19 @@
 
 A simple BSD Fortune API.
 
+## Runnig the app
+
+It's a Sinatra app so it's pretty simple.
+
+```bash
+  cd ~/YOUR_PATH/fortune-api/
+  ruby app.rb
+```
+Then go to http://localhost:4567/
+
 ## Installing Fortune
+
+The app is based on the Fortune program, so you will need it.
 
 ### on Mac OS (with Homebrew)
 
