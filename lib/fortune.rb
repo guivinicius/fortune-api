@@ -6,7 +6,13 @@ class Fortune
   end
 
   def text
-    `fortune #{options}`
+    # Check if Fortune program exists
+    if system("command -v fortune >/dev/null 2>&1")
+      `fortune #{options}`
+    else
+      "It looks like you don't have the Fortune program. Check README.md to install instructions."
+    end
+
   end
 
   def options
